@@ -1,0 +1,328 @@
+@import "./reset.css";
+@import "./root.css";
+
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Jost",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #47b2e4; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #47b2e4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f5f6f8;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #37517e;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #4668a2;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+--------------------------------------------------------------*/
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section, .section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    display: block;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+}
+
+h4 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+--------------------------------------------------------------*/
+/* page team */
+:root {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem; /* 세로 간격을 1.5rem로 설정 */
+}
+
+#team {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    display: block;
+}
+
+.team-member {
+    color: #444444;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -24px;
+    justify-content: center;
+}   
+
+.team-member .pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.section-title h2 {
+    font-family: var(--heading-font);
+}
+
+.team .team-member .team-member-box1 {
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border-radius: 5px;
+    transition: 0.5s;
+    padding: 30px;
+    width: 636px;
+    height: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    display: flex;
+    justify-content: center;
+}
+
+.team-member-box1 {
+    transform: translateY(-10px);
+    pointer-events: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.pic {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.team-member-box2 {
+    display: flex;
+}
+
+.team .member-info {
+    padding-left: 30px;
+    text-align: left;
+
+}
+.team .team-member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 345px;
+    height: 24;
+}
+
+.team .team-member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+.team .team-member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+
+
+--------------------------------------------------------------*/
+/* page pricing */
+
+
+.pricing .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 564.594px;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -24px;
+}
+
+.pricing-container {
+    flex: 1 1 calc(33.333% - 20px); /* 3개의 열로 나눔 */
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    /* overflow: clip; 이게무엇 */
+    display: flex;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    box-sizing: border-box;
+}
+
+.pricing-item {
+    background-color: var(--surface-color);
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--background-color);
+    padding: 60px 40px;
+    border-radius: 5px;
+    /*height: 540.594px;*/
+    height: 606.594px;
+}
+
+.pricing h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.pricing h4 {
+    color: #47b2e4;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Jost",  sans-serif;
+    margin-bottom: 0;
+}
+
+.pricing h4 span {
+    color: 
+color-mix(in srgb, #444444, transparent 50%);
+    font-size: 18px;
+}
+
+.pricing ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+.pricing ul {
+    padding: 20px 0;
+    list-style: none;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    text-align: left;
+    line-height: 20px;
+}
+
+.pricing .featured .buy-btn {
+    background: #47b2e4;   ;
+    color: #ffffff;
+}
+
+.pricing .buy-btn {
+    color: #47b2e4;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    transition: 0.3s;
+    border: 1px solid var(--accent-color);
+}
+
+.pricing .featured .buy-btn {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.pricing-container0 {
+    color: #444444;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -24px;
+    justify-content: center;
+}
