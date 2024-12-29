@@ -1,0 +1,16 @@
+.section-top-kgi {
+    width: 100%;
+    position: relative;
+    margin-top: 32px; /* header-top 높이만큼 여백 */
+    background-color: #37517e;
+    z-index: 0;
+}
+
+.section-top-content-kgi {
+    width: 100%;
+    min-height: 110vh; /* viewport height의 80% */
+    padding: 120px 0 60px 0;
+    display: flex;
+    align-items: center;
+}
+

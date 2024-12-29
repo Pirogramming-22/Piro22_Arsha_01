@@ -1,5 +1,10 @@
 @import "./reset.css";
 
+.page1{
+    width: 100%;
+    height: 300px;
+}
+
 .header-top-kgi {
     display: flex;
     justify-content: space-between;
@@ -10,6 +15,7 @@
     right: 0;
     height: 32px;
     background-color: #023b6d;
+    z-index: 2;
 }
 
 .header-left-kgi,
@@ -58,7 +64,6 @@
 .header-priview-kgi ul li{
     width: 22px;
     height: 22px;
-    background-color:aqua;
 }
 
 
@@ -67,7 +72,6 @@
 .header-center-icon-kgi{
     width: 24px;
     height: 24px;
-    background-color:gray;
 }
 
 
@@ -81,7 +85,6 @@
 .header-nav-kgi{
     width: 24px;
     height: 24px;
-    background-color:gray;
 }
 
 .header-download-kgi{
@@ -90,20 +93,24 @@
     justify-content: space-between;
     gap: 10px;
     background-color: #00a6eb;
-    padding: 6px 14px
+    padding: 5px 14px
+}
+
+.header-download-kgi:hover{
+    background-color: #00b4ff;
+    cursor: pointer;
 }
 
 .header-download-icon-kgi{
-    width: 20px;
-    height: 20px;
-    background-color:gray;
+    transform: scale(0.9);
+    width: 22px;
+    height: 22px;
 }
 
 .header-icon-kgi{
     width: 100%;
     height: 100%;
-    fill: white;
-    color: white;
+    fill: rgba(255, 255, 255, .6);
 }
 .header-download-kgi span{
     color: white;
@@ -113,6 +120,14 @@
 }
 .header-right-kgi{
     gap: 15px;
+}
+.header-top-kgi .icon-selected-kgi{
+    fill: white;
+}
+
+.header-icon-kgi:hover{
+    fill: white;
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
