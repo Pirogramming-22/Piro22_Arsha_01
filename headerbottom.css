@@ -1,6 +1,7 @@
 .header-bottom-kgi{
     display: flex;
     position: fixed;
+    background-color: rgba(40, 58, 90, 0.9);
     top: 32px;
     right: 0;
     left: 0;
@@ -14,7 +15,6 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    /* 창 줄어들 때 바꿔주기 */
     margin: auto 45px;
 }
 
