@@ -92,8 +92,9 @@
 .drop-kgi ul li {
     margin: 11px 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     top: 3px;
+    gap: 20px;
 }
 
 /* 드롭다운 내부 링크 스타일 */
@@ -117,12 +118,12 @@
 #deepdrop-kgi {
     display: none;
     position: absolute;
-    left: -116%;
+    left: -137%;
     top: 0;
     background-color: white;
     padding: 10px;
     border-radius: 5px;
-    width: 204px;
+    width: 239px;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     color: #444444;
 }
