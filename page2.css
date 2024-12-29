@@ -160,16 +160,6 @@
     transition: transform 0.5s ease ;
 }
 
-/* .page2_item_box:has(#page2_downIcon01:checked) .page2_aboutUs_02_right img{
-        transform: scale(1.3);
-} */
-
 .page2_item_box:has(#page2_downIcon01:checked) ~ .page2_aboutUs_02_right img{
     transform: scale(1.3);
 }
-/* @media (min-height:500px){
-    .page2_aboutUs_02_right img{
-        transform: scale(1.3);
-
-    }
-} */
