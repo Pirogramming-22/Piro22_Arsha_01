@@ -1,0 +1,89 @@
+.html, .body{
+    box-sizing: border-box;
+}
+
+#page2_aboutUs_02{
+    width: 100%;
+    max-height: 70%;
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}  
+.page2_aboutUs_02_left{
+    color: var(--default-color);
+    flex:1;
+    max-width: 60%;
+    margin: 24px 0 0;
+    padding: 0 12px;
+    font-family: var(--heading-font);
+}
+.page2_text, .page2_item{
+    padding: 0 48px;
+}
+
+.page2_text_title {
+    margin:0 0 8px;
+}
+.page2_text_title span,.page2_text_title strong{
+    font-size: 34px;
+    font-weight: 400;
+    color: #37517E;
+    margin:0 0 8px;
+    line-height: 1.2;
+}
+.page2_text_title strong{
+    font-weight: 800;
+}
+.page2_text p{
+    margin:10px 0 16px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.page2_item_box{
+    background-color: var(--surface-color);
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.page2_number, .page2_item_title{
+    font-size: 17px;
+    color: #37517E;
+    font-weight: bold;
+} 
+.page2_item_title{
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 0 30px 0 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.page2_number{
+    color: var(--accent-color);
+    padding-right: 5px;
+    font-weight: 600;
+}
+
+
+.page2_aboutUs_02_right{
+    display: flex;
+    flex: 1;
+    max-width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding: 0 12px;
+}
+
+.page2_aboutUs_02_right img{
+    max-width: 100%;
+    max-height: auto;
+
+}
