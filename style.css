@@ -47,7 +47,7 @@
     scroll-behavior: smooth;
 }
 #page5{
-    background-color: var(--bs-gray-300);
+    
 }
 
 
@@ -58,6 +58,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--bs-gray-300);
 }
 h2{
     font-family: var(--heading-font);
@@ -148,8 +149,6 @@ h2{
 .FAQ__container_box-element_top .top-left .icon-quesion svg{
     fill: var(--accent-color);
 }
-
-
 .specific_label svg{
     width: 30px;
     height: 30px;
@@ -161,10 +160,12 @@ h2{
 }
 
 .icon-default{
-    fill: black;
+    fill: var(--bs-gray-600);
 }
 .icon-checked {
     display: none; /* 체크 상태에서 숨김 */
+    fill: #47b2e4; /* 체크된 상태에서 색상 변경 */
+    transition: fill 0.3s ease;
 }
 
 /* 체크 상태: 체크된 SVG를 표시하고 기본 SVG 숨김 */
@@ -174,8 +175,7 @@ h2{
 
 #specific:checked ~ .specific_label .icon-checked {
     display: block;
-    fill: #47b2e4; /* 체크된 상태에서 색상 변경 */
-    transition: fill 0.3s ease;
+
 }
 #specific:checked{
     display: none;
@@ -183,6 +183,101 @@ h2{
 #specific:checked ~ .specific_label{
     display: block;
 }
+
+#specific:checked ~ .specific__info{
+    display: block;
+}
+#specific:checked ~ .FAQ__container_box-element_top .top-left :nth-child(2){
+    color: var(--accent-color);
+}
+/* 체크 상태: 체크된 SVG를 표시하고 기본 SVG 숨김 */
+#specific-2:checked ~ .specific_label .icon-default {
+    display: none;
+}
+
+#specific-2:checked ~ .specific_label .icon-checked {
+    display: block;
+}
+#specific-2:checked{
+    display: none;
+}
+#specific-2:checked ~ .specific_label{
+    display: block;
+}
+
+#specific-2:checked ~ .specific__info{
+    display: block;
+}
+#specific-2:checked ~ .FAQ__container_box-element_top .top-left :nth-child(2){
+    color: var(--accent-color);
+}
+
+/* 체크 상태: 체크된 SVG를 표시하고 기본 SVG 숨김 */
+#specific-3:checked ~ .specific_label .icon-default {
+    display: none;
+}
+
+#specific-3:checked ~ .specific_label .icon-checked {
+    display: block;
+}
+#specific-3:checked{
+    display: none;
+}
+#specific-3:checked ~ .specific_label{
+    display: block;
+}
+
+#specific-3:checked ~ .specific__info{
+    display: block;
+}
+#specific-3:checked ~ .FAQ__container_box-element_top .top-left :nth-child(2){
+    color: var(--accent-color);
+}
+
+/* 체크 상태: 체크된 SVG를 표시하고 기본 SVG 숨김 */
+#specific-4:checked ~ .specific_label .icon-default {
+    display: none;
+}
+
+#specific-4:checked ~ .specific_label .icon-checked {
+    display: block;
+}
+#specific-4:checked{
+    display: none;
+}
+#specific-4:checked ~ .specific_label{
+    display: block;
+}
+
+#specific-4:checked ~ .specific__info{
+    display: block;
+}
+#specific-4:checked ~ .FAQ__container_box-element_top .top-left :nth-child(2){
+    color: var(--accent-color);
+}
+
+/* 체크 상태: 체크된 SVG를 표시하고 기본 SVG 숨김 */
+#specific-5:checked ~ .specific_label .icon-default {
+    display: none;
+}
+
+#specific-5:checked ~ .specific_label .icon-checked {
+    display: block;
+}
+#specific-5:checked{
+    display: none;
+}
+#specific-5:checked ~ .specific_label{
+    display: block;
+}
+
+#specific-5:checked ~ .specific__info{
+    display: block;
+}
+#specific-5:checked ~ .FAQ__container_box-element_top .top-left :nth-child(2){
+    color: var(--accent-color);
+}
+
 .specific__info{
     display: none;
     width: 100%;
@@ -191,12 +286,6 @@ h2{
     align-items: center;
     padding: 10px;
     transition: all 0.3s ease-in-out;
-}
-#specific:checked ~ .specific__info{
-    display: block;
-}
-#specific:checked ~ .FAQ__container_box-element_top .top-left :nth-child(2){
-    color: var(--accent-color);
 }
 .FAQ__container_box-element_top .top-left :nth-child(2):hover{
     color: var(--accent-color);
@@ -207,19 +296,23 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--background-color);
+    width: 100%;
+    padding: 40px 60px 30px 60px;
 }
-.contcact_wrap{
+
+.CONTACT__container{
     width: 960px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.contcact_wrap .info_wrap{
+.CONTACT__container .info_wrap{
     width: 41.6667%;
     flex: 0 0 auto;
 }
-.contcact_wrap .form_wrap{
+.CONTACT__container .form_wrap{
     width: 58.3333%;
     flex: 0 0 auto;
 }
