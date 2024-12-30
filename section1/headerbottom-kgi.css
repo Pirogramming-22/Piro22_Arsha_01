@@ -222,3 +222,30 @@
         transition: 0.3s;
     }
 }
+
+.floating-button-kgi {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+}
+
+.floating-button-kgi svg {
+    fill: white;
+    width: 24px;
+    height: 24px;
+    transform: scale(0.7, 0.75);
+}
+.floating-button-kgi:hover {
+    background-color: 
+    color-mix(in srgb, var(--accent-color), transparent 20%);
+}
