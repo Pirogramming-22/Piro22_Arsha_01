@@ -1,6 +1,6 @@
 @import url(./root.css);
 @import url(./reset.css);
-@import url(./bootstrap-icons.css);
+
 /* imported css file */
 
 --------------------------------------------------------------*/
@@ -65,6 +65,7 @@ h2.before-after::before {
     margin: auto;
 }
 
+
 h2.before-after::before {
     content: "";
     position: absolute;
@@ -77,7 +78,6 @@ h2.before-after::before {
     bottom: 1px;
     margin: auto;
 }
-/*이 before을 한 번쓰면 반영이 안되고 두 번쓰면 반영이 되는데 왤까요..*/
 
 .before-after::after {
     content: "";
@@ -120,7 +120,12 @@ section, .section {
     padding-bottom: 20px;
     text-transform: uppercase;
     position: relative;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading-color);
@@ -149,6 +154,7 @@ h4 {
     box-sizing: border-box;
     color: rgb(68, 68, 68);
     display: block;
+    padding: 60px 0;
 }
 
 .team-member {
@@ -252,6 +258,7 @@ img {
     position: relative;
     font-weight: 500;
 }
+
 
 .team .team-member p {
     margin: 10px 0 0 0;
@@ -466,10 +473,7 @@ section.testimonials {
     background-color: #f9f9f9;
 }
 
-.section-title h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
+
 
 .section-title p {
     font-size: 16px;
