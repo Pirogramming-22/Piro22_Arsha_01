@@ -322,6 +322,10 @@
     margin-inline: auto;
 }
 
+#PF-img-container-km {
+    position: relative;
+}
+
 #PF-title-km > div:first-of-type {
     font-size: 32px;
     font-weight: 700;
@@ -380,6 +384,7 @@
     border-radius: 50px;
     font-family: var(--heading-font);
     transition: all 0.3s ease-in-out;
+    color: var(--default-color);
 }
 
 #PF-item-nav-km > div:first-of-type,
@@ -389,7 +394,8 @@
 }
 
 #PF-item-list-km {
-    position: relative;
+    position: absolute;
+    left: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: dense;
@@ -424,7 +430,7 @@
 .Branding3-km { grid-area: Branding3; }
 
 .PF-item-km {
-    border: 5px dotted salmon;
+    /* border: 5px dotted salmon; grid-cell 크기 및 배치 확인용 */
     width: 100%;
     padding-right: calc(var(--bs-gutter-x)* .5);
     padding-left: calc(var(--bs-gutter-x)* .5);
@@ -453,7 +459,7 @@
 }
 
 .PF-item-info-km {
-    width: 94%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
