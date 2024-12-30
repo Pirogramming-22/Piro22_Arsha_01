@@ -107,8 +107,12 @@
     cursor: pointer;
     margin-left: auto;
 }
+.page2_downIcon_input {
+    appearance: none;
+}
 
 .page2_item_hidden_button .icon{
+    display: inline-block;
     width: 25px;
     height: 25px;
     font-weight: 200;
