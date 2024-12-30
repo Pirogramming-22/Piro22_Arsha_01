@@ -165,11 +165,6 @@
     width: 100%;
 }
 /* portfolio: item-info-navBar */
-#PF-item-nav-km {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #PF-item-nav-km input[type="radio"] {
     display: none;
 }
@@ -193,12 +188,6 @@
     color: var(--contrast-color-km);
     background-color: var(--accent-color);
 }
-
-/* !!!!!!! 해결필요 !!!!!!!! */
-#app_km:checked ~ #PF-item-list-km .App1-km {
-    display: none;
-}
-/* !!!!!!! 해결필요 !!!!!!!! */
 
 /* portfolio: item-info-imgList */
 #PF-item-list-km {
@@ -236,6 +225,48 @@
 .Product3-km { grid-area: Product3; }
 .App3-km { grid-area: App3; }
 .Branding3-km { grid-area: Branding3; }
+
+/* 'App-app' button 눌렀을 때 */
+#app-km:checked ~ #PF-item-list-km .Product1-km,
+#app-km:checked ~ #PF-item-list-km .Branding1-km,
+#app-km:checked ~ #PF-item-list-km .Product2-km,
+#app-km:checked ~ #PF-item-list-km .Branding2-km,
+#app-km:checked ~ #PF-item-list-km .Product3-km,
+#app-km:checked ~ #PF-item-list-km .Branding3-km {
+    display: none;
+}
+#app-km:checked ~ #PF-item-list-km {
+    grid-template-areas: 
+    "App1 App2 App3";
+}
+
+/* 'Card-product' button 눌렀을 때 */
+#card-km:checked ~ #PF-item-list-km .App1-km,
+#card-km:checked ~ #PF-item-list-km .Branding1-km,
+#card-km:checked ~ #PF-item-list-km .App2-km,
+#card-km:checked ~ #PF-item-list-km .Branding2-km,
+#card-km:checked ~ #PF-item-list-km .App3-km,
+#card-km:checked ~ #PF-item-list-km .Branding3-km {
+    display: none;
+}
+#card-km:checked ~ #PF-item-list-km {
+    grid-template-areas: 
+    "Product1 Product2 Product3";
+}
+
+/* 'Web-branding' button 눌렀을 때 */
+#web-km:checked ~ #PF-item-list-km .App1-km,
+#web-km:checked ~ #PF-item-list-km .Product1-km,
+#web-km:checked ~ #PF-item-list-km .App2-km,
+#web-km:checked ~ #PF-item-list-km .Product2-km,
+#web-km:checked ~ #PF-item-list-km .App3-km,
+#web-km:checked ~ #PF-item-list-km .Product3-km {
+    display: none;
+}
+#web-km:checked ~ #PF-item-list-km {
+    grid-template-areas: 
+    "Branding1 Branding2 Branding3";
+}
 
 /* grid-cell */
 .PF-item-km {
