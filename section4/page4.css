@@ -31,7 +31,7 @@
 
 
 .light-background {
-  --background-color: #f5f6f8;
+    background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
   --surface-color: #ffffff;
 }
 
@@ -466,7 +466,6 @@ section.mk-testimonials {
 }
 
 
-
 .mk-swiper p {
     font-size: 16px;
     color: #666;
@@ -552,7 +551,6 @@ section.mk-testimonials {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-
 .mk-pagination {
     display: flex;
     justify-content: center;
@@ -560,12 +558,12 @@ section.mk-testimonials {
     gap: 8px; /* 점 사이 간격 */
     margin: 20px 0;
   }
+
   
   .mk-pagination input[type="radio"] {
     display: none;
   }
   
-  /* 점의 기본 스타일 */
   .mk-pagination label {
     width: 12px;
     height: 12px;
@@ -574,44 +572,67 @@ section.mk-testimonials {
     border-radius: 50%;
     transition: background-color 0.3s, transform 0.3s;
   }
-  
-  /* 활성화된 점의 스타일 */
+
   .mk-pagination input[type="radio"]:checked + label {
-    background-color:   var(--accent-color); /* 활성화된 점 색상 */
+    background-color: var(--accent-color); /* 활성화된 점 색상 */
+  }
+  
+.mk-slidelist {
+    animation: slide 12s infinite;
+}
+
+  /* 점 애니메이션 정의 */
+  .mk-pagination label:nth-of-type(1) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 0s;
+  }
+  
+  .mk-pagination label:nth-of-type(2) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 2.4s;
+  }
+  
+  .mk-pagination label:nth-of-type(3) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 4.8s;
+  }
+  
+  .mk-pagination label:nth-of-type(4) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 7.2s;
+  }
+  
+  .mk-pagination label:nth-of-type(5) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 9.6s;
+  }
+  
+  @keyframes dotActivate {
+    0%, 80% {
+      background-color: lightgray;
+    }
+    90%, 100% {
+      background-color: var(--accent-color);
+    }
   }
 
-  @keyframes paginationChange {
-    0%, 25% { transform: translateX(0); }
-    50% { transform: translateX(-100%); }
-    100% { transform: translateX(-200%); }
-}
-
-/* 점이 자동으로 활성화되도록 순환 애니메이션 추가 */
-.mk-pagination label:nth-of-type(1) {
-    animation: activate 12s infinite;
-}
-
-
-
-.mk-testimonials .mk-testimonial-item .quote-icon-right {
-    color: color-mix(in srgb, var(--accent-color), transparent 50%);
-    font-size: 26px;
-    line-height: 0;
-}
+  
 
 /* 애니메이션 정의 */
 @keyframes slide {
     0% { transform: translateX(0); }         /* 첫 번째 페이지 */
-    20% { transform: translateX(0); }       /* 첫 번째 페이지에서 멈춤 */
-    25% { transform: translateX(-100%); }   /* 두 번째 페이지 */
-    45% { transform: translateX(-100%); }   /* 두 번째 페이지에서 멈춤 */
-    50% { transform: translateX(-200%); }   /* 세 번째 페이지 */
-    70% { transform: translateX(-200%); }   /* 세 번째 페이지에서 멈춤 */
-    75% { transform: translateX(-300%); }   /* 네 번째 페이지 */
-    90% { transform: translateX(-300%); }   /* 네 번째 페이지에서 멈춤 */
+    15% { transform: translateX(0); }       /* 첫 번째 페이지에서 멈춤 */
+    20% { transform: translateX(-100%); }   /* 두 번째 페이지 */
+    35% { transform: translateX(-100%); }   /* 두 번째 페이지에서 멈춤 */
+    40% { transform: translateX(-200%); }   /* 세 번째 페이지 */
+    55% { transform: translateX(-200%); }   /* 세 번째 페이지에서 멈춤 */
+    60% { transform: translateX(-300%); }   /* 네 번째 페이지 */
+    75% { transform: translateX(-300%); }   /* 네 번째 페이지에서 멈춤 */
+    80% { transform: translateX(-400%); }  /* 다섯 번째 페이지 */
     95% { transform: translateX(-400%); }  /* 다섯 번째 페이지 */
-    110% { transform: translateX(-400%); }  /* 다섯 번째 페이지에서 멈춤 */
-}
+    100% { transform: translateX(-500%);}
+  }
+
 
 /* 반응형 디자인 */
 @media (max-width: 600px) {
