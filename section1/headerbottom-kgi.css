@@ -190,9 +190,6 @@
     transition: 0.3s;
 }
 
-.header-bottom-nav-kgi .nav-selected-kgi{
-    color: #47b2e4;
-}
 @media (max-width: 1199px) {
     .header-bottom-container-kgi{
         justify-content: space-between;
