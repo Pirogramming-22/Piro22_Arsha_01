@@ -15,7 +15,7 @@
 .banner-kgi .cycle-inner-kgi{
     display: flex;
     width: calc(240px * 8); /* 이미지 수만큼 폭 설정 */
-    animation: slide 20s infinite;
+    animation: slide 30s infinite;
 }
 
 .banner-kgi img {
@@ -27,6 +27,7 @@
 
 .banner-kgi .cycle-inner-kgi img:hover{
     transform: scale(1.1);
+    cursor: pointer;
     transition: 0.3s;
 }
 
