@@ -96,16 +96,7 @@
     height: auto;
     width: auto;
 }
-.page2_services_type_inner::after{
-    content: "";
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-}
+
 .page2_services_type_inner > p{
     line-height: 24px;
     font-size: 14px;
