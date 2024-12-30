@@ -32,205 +32,6 @@
     --bs-body-line-height-km: 1.5;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-/* page4 테스트용 */
-.page3 {
-    padding: 60px 0;
-    color: var(--default-color);
-}
-
-#page3__team, #page3__pricing, #page3__review {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: var(--background-color);
-}
-
-.page3#second, #page3__pricing {
-    background-color: #f5f6f8;
-}
-
-#page3__team_infotop,
-#page3__pricing_infotop,
-#page3__review_infotop {
-    text-align: center;
-    padding: 0 12px 60px 12px;
-    margin: auto;
-    width: 100%;
-}
-
-#page3__team_infotop > #team_name,
-#page3__pricing_infotop > #pricing_title,
-#page3__review_infotop > #review_title,
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_name {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: var(--heading-color);
-    font-family: var(--heading-font);
-    line-height: 1.2;
-}
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_name {
-    padding-bottom: 0;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_job {
-    padding-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-}
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_job::after {
-    content: "";
-    flex-direction: column;
-    margin-top: 11px;
-    justify-content: flex-start;
-    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-    width: 50px;
-    height: 1px;
-}
-
-#page3__team_infotop > #team_name::before,
-#page3__pricing_infotop > #pricing_title::before,
-#page3__review_infotop > #review_title::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 160px;
-    height: 1px;
-    background: color-mix(in srgb, var(--default-color), transparent 60%);
-    left: 0;
-    right: 0;
-    bottom: 1px;
-    margin: auto;
-}
-
-#page3__team_infotop > #team_name::after,
-#page3__pricing_infotop > #pricing_title::after,
-#page3__review_infotop > #review_title::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--accent-color);
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    margin: auto;
-    opacity: 1;
-}
-
-#page3__team_infotop > span,
-#page3__pricing_infotop > span,
-#page3__review_infotop > span,
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info {
-    font-family: var(--default-font);
-    width: 100%;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_job {
-    font-weight: 500;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_message {
-    font-size: 14px;
-    line-height: 1.5;
-}
-
-
-#page3__team_bottom {
-    --bs-gutter-x: 1.5rem;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
-}
-
-#page3__team_memberlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#page3__team_memberlist > .member_profile {
-    margin-top: 24px;
-    padding: 0 12px;
-    width: 100%;
-} 
-
-#page3__team_memberlist > .member_profile > .member_profile_container {
-    padding: 30px;
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    background-color: var(--surface-color);
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    height: 100%;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_img {
-    overflow: hidden;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    flex-shrink: 0;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_img > img {
-    max-width: 100%;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info {
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_icon {
-    margin-top: 12px;
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_icon > a {
-    background-color: color-mix(in srgb, var(--default-color), transparent 94%);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 8px;
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_icon > a > img {
-    filter: invert(0.4);
-}
-
-#page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_icon > a:nth-of-type(1) {
-    margin-left: 0;
-}
-/* page4 테스트용 */
-
-
-
 /* page3-final */
 /* call-to-action */
 #call-to-action-km {
@@ -272,6 +73,7 @@
     display: flex;
     flex-direction: column;
 }
+
 #topinfo-left-km, #topinfo-right-km {
     padding-inline: 12px;
 }
@@ -305,6 +107,7 @@
     width: 196px;
     letter-spacing: 1px;
     align-content: center;
+    text-decoration: none;
 }
 /* portfolio */
 #portfolio-km {
@@ -447,7 +250,7 @@
     position: relative;
     display: block;
     overflow: hidden;
-    grid-row: span 18;
+    grid-row: span 17;
 }
 /* img height에 따른 row 크기 설정 */
 .PF-item-km.X1-km {
@@ -457,7 +260,7 @@
     grid-row: span 30;
 }
 .PF-item-km.X3-km {
-    grid-row: span 44;
+    grid-row: span 43;
 }
 .PF-item-km > img {
     width: 100%;
@@ -523,6 +326,14 @@
 .icon-container-km:hover .icon-km path {
     fill: var(--accent-color);
     filter: invert(0);
+}
+
+#topinfo-container-km,
+#topinfo-right-km > a,
+#PF-img-container-km,
+.PF-item-km,
+.PF-item-info-km {
+    box-sizing: border-box;
 }
 
 /* width for screen size */
@@ -664,28 +475,6 @@
     }   
 }
 @media (max-width: 468px) {
-    /*
-    page3(page4) css
-    #page3__team_memberlist > .member_profile > .member_profile_container {
-        flex-direction: column;
-        align-items: center;
-    }
-    #page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info {
-        padding-top: 30px;
-        padding-left: 0;
-    }
-    #page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info {
-        align-items: center;
-        text-align: center;
-    }
-    #page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_job::after{
-        margin-inline: auto;
-    }
-    #page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_icon{
-        justify-content: center;
-    }
-    */
-
     /*page3-final*/
     #topinfo-km {
         flex-wrap: wrap;
