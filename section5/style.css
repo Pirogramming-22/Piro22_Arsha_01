@@ -73,6 +73,7 @@ h3.bigger_h3{
     align-items: center;
     color: var(--heading-color);
     text-transform: uppercase;
+    font-family: var(--heading-font);
 }
 .title_yh::before{
     content: '';
