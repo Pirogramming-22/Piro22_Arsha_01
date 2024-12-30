@@ -1,0 +1,53 @@
+#glightbox-body {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.goverlay {
+    background: rgba(0, 0, 0, .92);
+}
+
+.gcontainer {
+    background: rgba(0, 0, 0, .92);
+}
+
+#glightbox-slider {
+    display: flex;
+    align-items: center;
+}
+
+.ginner-container {
+    margin-inline: 185px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gslide-media {
+    height: 847px;
+}
+
+.gslide-description {
+    width: 100%;
+    height: 86px;
+    background-color: white;
+}
+
+.gdesc-inner {
+    padding: 22px 20px;
+}
+
+.gdesc-inner > h4 {
+    margin-top: 0px;
+    margin-bottom: 19px;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: arial;
+    color: #000;
+    margin-bottom: 19px;
+    line-height: 1.4em;
+}
+
