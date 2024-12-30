@@ -122,16 +122,6 @@ h3{
     margin-top: 10px;
     flex-shrink: 0;
 }
-.FAQ__container_box{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    padding: 20px;
-    background-color: white;
-    width: 100%;
-    margin-bottom: 20px;
-    flex-shrink: 0;
-}   
 
 .FAQ__container_box{
 display: flex;
@@ -139,7 +129,7 @@ position: relative;
 flex-direction: column;
 padding: 20px;
 background-color: white;
-width: 83.3333%;
+width: 926px;
 margin-bottom: 20px;
 flex-shrink: 0;
 }   
@@ -162,10 +152,16 @@ flex-shrink: 0;
 .FAQ__container_box-element_top .top-left{
     line-height: 24px;
     display: flex;
+    font-family: var(--heading-font);
+    color: var(--heading-color);
     flex-direction: row;
     align-items: center;
     font-size: 18px;
     font-weight: 600;
+}
+.FAQ__container_box-element_top .top-left div{
+    color: var(--accent-color);
+
 }
 .FAQ__container_box-element_top .top-left .icon-quesion{
     display: flex;
@@ -193,7 +189,27 @@ flex-shrink: 0;
     margin-top: 24px;
     margin-right: 40px;
 }
-
+@media(max-width:1000px){
+    .FAQ__container_box{
+        width: 776px;
+    }
+}
+@media(max-width:930px){
+    .FAQ__container_box{
+        width:696px;
+    }
+}
+@media(max-width:776px){
+    .FAQ__container_box{
+        width: 516px;
+    }
+    .FAQ__container_box-element_top .top-left div{
+        max-width: 400px;        
+    } 
+    .specific_label svg{
+        margin-top: 30px;
+    }
+}
 .icon-default{
     fill: var(--bs-gray-600);
 }
