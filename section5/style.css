@@ -51,11 +51,14 @@ p.p-yh{
     margin-bottom: 0;
 }
 h3.bigger_h3{
-    font-size: 18px;
-    font-family: var(--default-font);
+    font-size: 24px;
+    font-family: var(--heading-font);
     font-weight: 700;
     margin-bottom: 5px;
     color: var(--heading-color);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 12px;
 }
 
     /* title */
@@ -523,7 +526,7 @@ footer{
     justify-items: center;
     flex-wrap: wrap;
     flex: 0 0 auto;
-    width: 50%;
+    width: 56%;
 }
 #joinOurNewsletter .Newsletter-container p{
     text-align: center;
