@@ -358,6 +358,12 @@ flex-shrink: 0;
     display: flex;
     flex-direction: row;
 }
+.info_wrap .infosec:hover .infoTopTab{
+    background-color: var(--accent-color);
+}
+.info_wrap .infosec:hover .infoTopTab >svg{
+    color: white;
+}
 .infosec .infoTopTab{
     display: flex;
     justify-content: center;
@@ -367,6 +373,7 @@ flex-shrink: 0;
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
 }
 .infoTopTab > svg{
     width: 20px;
@@ -381,7 +388,6 @@ flex-shrink: 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-block:3px solid var(--accent-color);
     margin: 10px 15px 10px 15px;
-
 }
 @media(max-width:960px){
     .CONTACT__container{
@@ -431,6 +437,13 @@ flex-shrink: 0;
     padding: 10px 15px;
     border:1px solid var(--bs-border-color);
 }
+.row_50per input[type="text"]:focus{
+    border:1px solid var(--accent-color);
+}
+.row_100per input[type="text"]:focus{
+    border:1px solid var(--accent-color);
+}
+
 .row_100per{
     display: flex;
     flex-direction: column;
@@ -450,8 +463,16 @@ flex-shrink: 0;
     border:1px solid var(--bs-border-color);
 }
 .form-control {
-    height:230px;
+    font-size: 14px;
+    padding: 10px 15px;
+    border:1px solid var(--bs-border-color);
+    height: 230px;
 }
+.form-control:focus{
+    outline: none;
+    border:1px solid var(--accent-color)
+}
+
 .sendMessageSection{
     justify-content: center;
     align-items: center;
