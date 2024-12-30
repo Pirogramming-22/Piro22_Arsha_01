@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     padding: 60px 0;
+    font-family: var(--default-font);
 }
 
 .aboutus-north-kgi{
@@ -17,6 +18,7 @@
     text-transform: uppercase;
     position: relative;
     color: #37517e;
+    font-family: var(--heading-font);
 }
 
 .aboutUs-kgi .aboutus-title-kgi::before{
@@ -65,7 +67,7 @@
 .aboutus-left-kgi ul{
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 17.5px;
     font-weight: 200;
 }
 .aboutus-left-kgi ul li{
@@ -91,7 +93,7 @@
 
 .aboutus-right-kgi a{
     color: #47b2e4;
-    font-weight: 550;
+    font-weight: 500;
     font-size: 16px;
     letter-spacing: 1px;
     padding: 12px 28px;
@@ -102,6 +104,7 @@
     justify-content: center;
     border: 2px solid #47b2e4;
     gap: 6px;
+    font-family: var(--heading-font);
 }
 .aboutus-right-kgi img{
     filter: invert(50%) sepia(92%) saturate(400%) hue-rotate(180deg) brightness(90%) contrast(110%);

@@ -9,6 +9,7 @@
     min-height: 76vh;
     padding: 98px 0 72px 0;
     z-index: 0;
+    font-family: var(--default-font);
 }
 
 .section-top-content-kgi {
@@ -28,6 +29,7 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 56px;
+    font-family: var(--heading-font);
 }
 .hero-left-kgi p{
     color: color-mix(in srgb, #fff, transparent 30%);
@@ -47,6 +49,7 @@
     padding: 10px 28px 12px 28px;
     border-radius: 50px;
     transition: 0.5s;
+    font-family: var(--heading-font);
 }
 
 .hero-getstarted-kgi:hover {

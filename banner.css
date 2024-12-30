@@ -25,6 +25,11 @@
     flex-shrink: 0;
 }
 
+.banner-kgi .cycle-inner-kgi img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
 @keyframes slide {
     0% { transform: translateX(0); }          /* 123456 (멈춤) */
     10% { transform: translateX(0); }         /* 멈춤 유지 */

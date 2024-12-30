@@ -20,9 +20,10 @@
 
 .header-bottom-container-kgi .header-bottom-left-kgi{
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     letter-spacing: 2px;
+    font-family: var(--heading-font);
 }
 
 .header-bottom-right-kgi{
@@ -38,7 +39,8 @@
     list-style: none;
     list-style-type: none;
     align-items: center;
-    gap: 34px;
+    gap: 24px;
+    font-family: var(--nav-font);
 }
 
 .header-bottom-right-kgi ul .drop-kgi{
@@ -180,6 +182,7 @@
     padding: 11px 25px;
     margin: 0 0 0 30px;
     border-radius: 50px;
+    font-family: var(--default-font);
 }
 .header-bottom-kgi .btn-getstarted-kgi:hover {
     background: 
