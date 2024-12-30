@@ -234,7 +234,6 @@
     clip-path: inset(0);
     position: relative;
     overflow: clip;
-    position: relative;
 }
 
 #call-to-action-km::before {
@@ -269,6 +268,11 @@
     justify-content: center;
 }
 
+#topinfo-left-km {
+    display: flex;
+    flex-direction: column;
+}
+
 #topinfo-left-km, #topinfo-right-km {
     padding-inline: 12px;
 }
@@ -289,7 +293,6 @@
 
 #topinfo-right-km {
     align-items: center;
-    width: 25%;
 }
 
 #topinfo-right-km > a {
@@ -311,7 +314,9 @@
 #portfolio-km {
     background-color: var(--background-color);
     padding: 60px 0;
-    align-items: center;
+    height: 1600px;
+    display: flex;
+    flex-direction: column;
 }
 
 #PF-title-container-km, #PF-img-container-km {
@@ -467,6 +472,11 @@
     padding: 15px;
     transition: all ease-in-out 0.5s;
     position: absolute;
+    bottom: -100%; /* :hover */
+    opacity: 0; /* :hover */
+}
+
+.PF-item-km:hover .PF-item-info-km {
     bottom: 0; /* :hover */
     opacity: 1; /* :hover */
 }
@@ -549,12 +559,26 @@
     #PF-item-list-km {
         width: 960px;
     }
+    #topinfo-km {
+        flex-wrap: wrap;
+    }
+    #topinfo-left-km,
+    #topinfo-left-km > div:last-of-type {
+        text-align: center;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     #topinfo-container-km,
     #PF-title-container-km,
     #PF-img-container-km {
         max-width: 720px;
+    }
+    #topinfo-km {
+        flex-wrap: wrap;
+    }
+    #topinfo-left-km,
+    #topinfo-left-km > div:last-of-type {
+        text-align: center;
     }    
 }
 @media (min-width: 576px) and (max-width: 767px) {
@@ -562,16 +586,32 @@
     #PF-title-container-km,
     #PF-img-container-km {
         max-width: 540px;
-    }    
+    }
+    #topinfo-km {
+        flex-wrap: wrap;
+    }
+    #topinfo-left-km,
+    #topinfo-left-km > div:last-of-type {
+        text-align: center;
+    }  
 }
 @media (min-width: 469px) and (max-width: 576px) {
     #topinfo-container-km,
     #PF-title-container-km,
     #PF-img-container-km {
         max-width: 440px;
-    }   
+    }
+    #topinfo-km {
+        flex-wrap: wrap;
+    }
+    #topinfo-left-km,
+    #topinfo-left-km > div:last-of-type {
+        text-align: center;
+    }    
 }
 @media (max-width: 468px) {
+    /*
+    page3(page4) css
     #page3__team_memberlist > .member_profile > .member_profile_container {
         flex-direction: column;
         align-items: center;
@@ -590,4 +630,14 @@
     #page3__team_memberlist > .member_profile > .member_profile_container > .member_profile_info > .member_icon{
         justify-content: center;
     }
+    */
+
+    /*page3-final*/
+    #topinfo-km {
+        flex-wrap: wrap;
+    }
+    #topinfo-left-km,
+    #topinfo-left-km > div:last-of-type {
+        text-align: center;
+    } 
 }
