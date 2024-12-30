@@ -437,6 +437,34 @@
         "Product3 App3"
         ". Branding3";
     }
+    /* app button */
+    #app-km:checked ~ #PF-item-list-km > .Branding1-km {
+        display: block;
+        opacity: 0;
+    }
+    #app-km:checked ~ #PF-item-list-km {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 12px;
+        grid-template-areas: 
+        "App1 App2"
+        "Branding1 App3";
+    }
+    /* card button */
+    #card-km:checked ~ #PF-item-list-km {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 12px;
+        grid-template-areas: 
+        "Product1 Product2"
+        "Product3 Product2";
+    }
+    /* web button */
+    #web-km:checked ~ #PF-item-list-km {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 12px;
+        grid-template-areas: 
+        "Branding1 Branding2"
+        "Branding3 Branding2";
+    }
     #portfolio-km {
         height: 1800px;
     }
@@ -467,6 +495,36 @@
         "Branding2"
         "App3"
         "Product3"
+        "Branding3";
+    }
+    /* app button */
+    #app-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 18px;
+        grid-template-areas: 
+        "App1"
+        "App2"
+        "App3";
+    }
+    /* card button */
+    #card-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 18px;
+        grid-template-areas: 
+        "Product1"
+        "Product2"
+        "Product3";
+    }
+    /* web button */
+    #web-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 18px;
+        grid-template-areas: 
+        "Branding1"
+        "Branding2"
         "Branding3";
     }
     #portfolio-km {
@@ -501,6 +559,37 @@
         "Product3"
         "Branding3";
     }
+    /* app button */
+    #app-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 15px;
+        grid-template-areas: 
+        "App1"
+        "App2"
+        "App3";
+    }
+    /* card button */
+    #card-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 15px;
+        grid-template-areas: 
+        "Product1"
+        "Product2"
+        "Product3";
+    }
+    /* web button */
+    #web-km:checked ~ #PF-item-list-km {
+        margin-top: 20px;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 15px;
+        grid-template-areas: 
+        "Branding1"
+        "Branding2"
+        "Branding3";
+    }
     #portfolio-km {
         height: 3880px;
     }   
@@ -527,6 +616,36 @@
         "Branding2"
         "App3"
         "Product3"
+        "Branding3";
+    }
+    /* app button */
+    #app-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas: 
+        "App1"
+        "App2"
+        "App3";
+    }
+    /* card button */
+    #card-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas: 
+        "Product1"
+        "Product2"
+        "Product3";
+    }
+    /* web button */
+    #web-km:checked ~ #PF-item-list-km {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-areas: 
+        "Branding1"
+        "Branding2"
         "Branding3";
     }
     #PF-item-km {
