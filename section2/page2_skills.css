@@ -96,7 +96,7 @@ progress::-webkit-progress-value {
     background-color:var(--heading-color);
 }
 progress::-webkit-progress-bar {
-    background-color: var(--bs-secondary-bg);
+    background-color: #e9ecef;
 }
 
 @media (max-width:992px){
