@@ -1,6 +1,5 @@
 @import url(./root.css);
 @import url(./reset.css);
-@import url(./bootstrap-icons.css);
 /* imported css file */
 :root {
     --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -158,10 +157,6 @@ flex-shrink: 0;
     align-items: center;
     font-size: 18px;
     font-weight: 600;
-}
-.FAQ__container_box-element_top .top-left div{
-    color: var(--accent-color);
-
 }
 .FAQ__container_box-element_top .top-left .icon-quesion{
     display: flex;
