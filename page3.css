@@ -364,7 +364,6 @@
 
 #PF-item-nav-km {
     display: flex;
-    margin: 0 auto 20px auto;
     justify-content: center;
     align-items: center;
 }
@@ -391,11 +390,38 @@
 
 #PF-item-list-km {
     position: relative;
-    height: 1079.31px;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: dense;
+    grid-auto-rows: 15px;
+    grid-template-areas: 
+    "App1 Product1 Branding1"
+    "Branding2 Product2 App2"
+    ". Branding3 App3"
+    ". . Product3";
 }
+
+.App1-km {
+    grid-area: App1;
+}
+.Product1-km {
+    grid-area: Product1;
+}
+.Branding1-km {
+    grid-area: Branding1;
+}
+.App2-km {
+    grid-area: App2;
+}
+.Product2-km {
+    grid-area: Product2;
+}
+.Branding2-km {
+    grid-area: Branding2;
+}
+.Product3-km { grid-area: Product3; }
+.App3-km { grid-area: App3; }
+.Branding3-km { grid-area: Branding3; }
 
 .PF-item-km {
     border: 5px dotted salmon;
@@ -404,14 +430,30 @@
     padding-left: calc(var(--bs-gutter-x)* .5);
     margin-top: var(--bs-gutter-y);
     position: relative;
+    display: block;
+    overflow: hidden;
+    grid-row: span 18;
+}
+
+.PF-item-km.X1-km {
+    grid-row: span 20;
+}
+
+.PF-item-km.X2-km {
+    grid-row: span 30;
+}
+
+.PF-item-km.X3-km {
+    grid-row: span 44;
 }
 
 .PF-item-km > img {
     width: 100%;
+    height: 100%;
 }
 
 .PF-item-info-km {
-    width: 100%;
+    width: 94%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -437,6 +479,7 @@
 .PF-item-about-km {
     color: color-mix(in srgb, var(--default-color), transparent 30%);
     font-size: 14px;
+    font-family: var(--default-font);
 }
 
 .PF-item-info-km > a {
@@ -454,10 +497,20 @@
     height: 28px;
 }
 
-.PF-item-info-km > a > img {
+.PF-item-info-km > a > svg {
     width: 100%;
     height: 100%;
-    filter: invert(0.5);
+}
+
+.icon-km path {
+    fill: var(--default-color); /* 기본 색상 */
+    transition: fill 0.3s ease; /* 부드러운 색상 전환 */
+    filter: invert(50%);
+}
+
+.icon-container-km:hover .icon-km path {
+    fill: var(--accent-color);
+    filter: invert(0);
 }
 
 /* width for screen size */
@@ -466,13 +519,19 @@
     #PF-title-container-km,
     #PF-img-container-km {
         max-width: 1320px;
-    }     
+    }
+    #PF-item-list-km {
+        width: 1320px;
+    } 
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
     #topinfo-container-km,
     #PF-title-container-km,
     #PF-img-container-km {
         max-width: 1140px;
+    }
+    #PF-item-list-km {
+        width: 1140px;
     } 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -480,7 +539,10 @@
     #PF-title-container-km,
     #PF-img-container-km {
         max-width: 960px;
-    }     
+    }
+    #PF-item-list-km {
+        width: 960px;
+    }
 }
 @media (min-width: 768px) and (max-width: 991px) {
     #topinfo-container-km,
