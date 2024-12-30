@@ -1,0 +1,79 @@
+.banner-kgi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 97px;
+    background-color: #f5f6f8;
+}
+.banner-kgi .cycle-cover-kgi{
+    display: flex;
+    align-items: center;
+    width: calc(240px * 6);
+    overflow: hidden;
+}
+.banner-kgi .cycle-inner-kgi{
+    display: flex;
+    width: calc(240px * 8); /* 이미지 수만큼 폭 설정 */
+    animation: slide 30s infinite;
+}
+
+.banner-kgi img {
+    margin: 0 70px;
+    width: 100px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.banner-kgi .cycle-inner-kgi img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }          /* 123456 (멈춤) */
+    10% { transform: translateX(0); }         /* 멈춤 유지 */
+    12.5% { transform: translateX(-12.5%); }  /* 234567 (이동) */
+    22.5% { transform: translateX(-12.5%); }  /* 멈춤 유지 */
+    25% { transform: translateX(-25%); }      /* 345678 (이동) */
+    35% { transform: translateX(-25%); }      /* 멈춤 유지 */
+    37.5% { transform: translateX(-37.5%); }  /* 456781 (이동) */
+    47.5% { transform: translateX(-37.5%); }  /* 멈춤 유지 */
+    50% { transform: translateX(-50%); }      /* 567812 (이동) */
+    60% { transform: translateX(-50%); }      /* 멈춤 유지 */
+    62.5% { transform: translateX(-62.5%); }  /* 678123 (이동) */
+    72.5% { transform: translateX(-62.5%); }  /* 멈춤 유지 */
+    75% { transform: translateX(-75%); }      /* 781234 (이동) */
+    85% { transform: translateX(-75%); }      /* 멈춤 유지 */
+    87.5% { transform: translateX(-87.5%); }  /* 812345 (이동) */
+    97.5% { transform: translateX(-87.5%); }  /* 멈춤 유지 */
+    99.999% { transform: translateX(-100%); } /* 123456 (초기화 준비) */
+    100% { transform: translateX(0); }        /* 초기화 (애니메이션 없음) */
+}
+
+@media (max-width: 1387px) {
+    .banner-kgi .cycle-cover-kgi{
+        width: calc(240px * 5);
+    }
+}
+@media (max-width: 1145px) {
+    .banner-kgi .cycle-cover-kgi{
+        width: calc(240px * 4);
+    }
+}
+@media (max-width: 910px) {
+    .banner-kgi .cycle-cover-kgi{
+        width: calc(240px * 3);
+    }
+}
+@media (max-width: 685px) {
+    .banner-kgi .cycle-cover-kgi{
+        width: calc(240px * 2);
+    }
+}
+@media (max-width: 426px) {
+    .banner-kgi .cycle-cover-kgi{
+        width: calc(240px * 1);
+    }
+}
