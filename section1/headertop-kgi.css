@@ -1,0 +1,148 @@
+.page1{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.header-top-kgi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 32px;
+    background-color: #023b6d;
+    z-index: 2;
+}
+
+.header-left-kgi,
+.header-right-kgi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-center-kgi {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 6px;
+    margin-top: -4px;
+}
+
+/* 헤더 left */
+.header-logo-kgi{
+    height: 100%;
+    padding-left: 10px;
+}
+.header-logo-kgi img{
+    height: 25px;
+}
+
+.interface-kgi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-priview-kgi ul{
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style: none;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.header-priview-kgi ul li{
+    width: 22px;
+    height: 22px;
+}
+
+
+/* center */
+
+.header-center-icon-kgi{
+    width: 24px;
+    height: 24px;
+}
+
+
+.header-center-kgi .header-name-kgi{
+    color: white;
+    display: flex;
+    font-weight: bold;
+}
+
+/* right */
+.header-nav-kgi{
+    width: 24px;
+    height: 24px;
+}
+
+.header-download-kgi{
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #00a6eb;
+    padding: 5px 14px
+}
+
+.header-download-kgi:hover{
+    background-color: #00b4ff;
+    cursor: pointer;
+}
+
+.header-download-icon-kgi{
+    transform: scale(0.9);
+    width: 22px;
+    height: 22px;
+}
+
+.header-icon-kgi{
+    width: 100%;
+    height: 100%;
+    fill: rgba(255, 255, 255, .6);
+}
+.header-download-kgi span{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    align-content: center
+}
+.header-right-kgi{
+    gap: 15px;
+}
+.header-top-kgi .icon-selected-kgi{
+    fill: white;
+}
+
+.header-icon-kgi:hover{
+    fill: white;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .header-priview-kgi {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .header-logo-kgi {
+        display: none;
+    }
+    .header-download-icon-kgi{
+        display: none;
+    }
+    .header-center-kgi {
+        position: fixed;
+        left: -19; 
+    }
+}

@@ -1,0 +1,192 @@
+.html, .body{
+    box-sizing: border-box;
+}
+.body {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-family: var(--default-font);
+}
+
+#page2_aboutUs_02{
+    width: 100%;
+    max-height: 100%;
+    background-color: #f5f6f8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    padding-bottom: 25px;
+
+
+}  
+.page2_aboutUs_02_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    max-width: 60%;
+    margin: 24px 0 0;
+    padding: 0 12px;
+    font-family: var(--heading-font);
+}
+.page2_text, .page2_item{
+    padding: 0 48px;
+    width: 100%;
+}
+
+.page2_text_title {
+    margin:0 0 8px;
+}
+.page2_text_title span,.page2_text_title strong{
+    font-size: 34px;
+    font-weight: 400;
+    color: #37517E;
+    margin:0 0 8px;
+    line-height: 1.2;
+}
+.page2_text_title strong{
+    font-weight: 800;
+}
+.page2_text_title > p{
+    margin:10px 0 16px;
+    color: #37517E;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.page2_item_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--surface-color);
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.page2_item_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.page2_item_title{
+    font-size: 17px;
+    color: #37517E;
+    flex:1;
+    display: flex;
+    font-weight: 650;
+    font-size: 17px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0 30px 0 0;
+    transition: 0.3s;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.page2_number{
+    color: var(--accent-color);
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+
+.page2_item_hidden_button{
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: top;
+    cursor: pointer;
+    margin-left: auto;
+}
+.page2_downIcon_input {
+    appearance: none;
+}
+
+.page2_item_hidden_button .icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    font-weight: 200;
+    fill :currentColor;
+    transition: transform 0.3s ease;
+    transform: rotate(0);
+
+}
+
+.page2_item_hidden{
+    display: none;
+    font-size: 16px;
+    line-height: 1.2rem;
+    padding-top: 8px;
+    font-family: var(--default-font);
+    color: #444444;
+    padding: 0 10px;
+    margin-top: 5px;
+    line-height: 1.4rem;
+}
+
+#page2_aboutUs_02 .page2_item_hidden_button .icon:hover {
+    color: #47b2e4;
+}
+#page2_aboutUs_02 .page2_item_title:hover{
+    color:#47B2E4;
+}
+
+.page2_item_hidden_button input[type="checkbox"]:checked + .icon {
+    transform: rotate(90deg);
+
+}
+.page2_item_header:has(#page2_downIcon01:checked) .page2_item_title,.page2_item_header:has(#page2_downIcon02:checked) .page2_item_title,.page2_item_header:has(#page2_downIcon03:checked) .page2_item_title {
+    color:#47B2E4
+}
+
+.page2_item_box:has(#page2_downIcon01:checked) .page2_item_hidden, .page2_item_box:has(#page2_downIcon02:checked) .page2_item_hidden, .page2_item_box:has(#page2_downIcon03:checked) .page2_item_hidden{
+    display: block;
+}
+
+.page2_aboutUs_02_right{
+    display: flex;
+    flex: 1;
+    max-width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    padding: 0 12px;
+}
+
+
+.page2_aboutUs_02_right img{
+    width: 70%;
+    height: auto;
+    max-height: 70%;
+    transition: transform 0.5s ease ;
+}
+
+#page2_aboutUs_02:has(#page2_downIcon01:checked) .page2_aboutUs_02_right img,
+#page2_aboutUs_02:has(#page2_downIcon02:checked) .page2_aboutUs_02_right img,
+#page2_aboutUs_02:has(#page2_downIcon03:checked) .page2_aboutUs_02_right img {
+    transform: scale(1.2);
+}
+
+
+@media (max-width:992px){
+    #page2_aboutUs_02{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .page2_aboutUs_02_right{
+        max-width: 100%;
+    }
+    .page2_aboutUs_02_left{
+        max-width: 100%;
+    }
+}

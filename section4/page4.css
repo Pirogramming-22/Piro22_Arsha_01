@@ -1,0 +1,670 @@
+@import url(./reset.css);
+
+/* imported css file */
+
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Jost",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #37517e; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #47b2e4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #47b2e4; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #47b2e4; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  scroll-behavior: smooth;
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+
+.light-background {
+    background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #37517e;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #4668a2;
+  --contrast-color: #ffffff;
+}
+
+--------------------------------------------------------------*/
+section, .mk-section {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    display: block;
+}
+
+.mk-section-title {
+    text-align: center;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+
+
+.mk-before-after {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+}
+
+.mk-container h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color:#37517e;
+    font-family: "Jost", sans-serif;
+}
+
+.mk-container h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #37517e;
+    font-family: "Jost", sans-serif;
+}
+
+h2.mk-before-after::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+
+h2.mk-before-after::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 160px;
+    height: 1px;
+    background: color-mix(in srgb, #444444, transparent 60%);
+    left: 0;
+    right: 0;
+    bottom: 1px;
+    margin: auto;
+}
+
+.mk-before-after::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-color);
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    margin: auto;
+    opacity: 1;
+}
+
+.mk-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+--------------------------------------------------------------*/
+/* page team */
+:root {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem; /* 세로 간격을 1.5rem로 설정 */
+}
+
+#mk-team {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    display: block;
+    padding: 60px 0;
+}
+
+.mk-team-member {
+    color: #444444;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -24px;
+    justify-content: center;
+}   
+
+
+.mk-team-member .mk-pic img {
+    transition: ease-in-out 0.3s;
+}
+
+.mk-team .mk-team-member .mk-team-member-box1 {
+    position: relative;
+    border-radius: 5px;
+    transition: 0.5s;
+    width: 636px;
+    height: 100%;
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 24px;
+}
+
+.mk-team-member-box1 {
+    transform: translateY(-10px);
+    pointer-events: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.mk-team-member-box1:hover {
+    transform: translateY(0.2px); /* 살짝 위로 이동 */
+    box-shadow: 0 2px 2px rgba(190, 186, 186, 0.2); /* 그림자 효과 추가 */
+}
+
+
+.mk-img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.mk-pic {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.mk-team img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.mk-team-member-box2 {
+    display: flex;
+    padding: 30px;
+    width: 100%;
+    align-items: flex-start;
+    background-color: var(--surface-color);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.mk-team .mk-member-info {
+    padding-left: 30px;
+    text-align: left;
+
+}
+.mk-team .mk-team-member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    width: 345px;
+    height: 24;
+}
+
+.mk-team .mk-team-member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+}
+
+
+.mk-team .mk-team-member p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.mk-team .mk-team-member .mk-social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.mk-team .mk-team-member .mk-social a i {
+    color: color-mix(in srgb, var(--default-color), transparent 20%);
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+.mk-team .mk-team-member .mk-social a {
+    background: color-mix(in srgb, var(--default-color), transparent 94%);
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    margin-left: 8px;
+}
+
+.mk-team .mk-team-member .mk-social a img {
+    width: 16px; /* 아이콘 크기 */
+    height: 16px;
+    transition: transform 0.3s ease; /* 호버 시 크기 변화 효과 */
+    fill: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.mk-team .mk-team-member .mk-social a:hover img {
+    fill: white;
+}
+
+
+.mk-team .mk-team-member .mk-social a:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+--------------------------------------------------------------*/
+/* page pricing */
+
+
+.mk-pricing .mk-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 564.594px;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -24px;
+}
+
+.mk-pricing-container {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    scroll-margin-top: 88px;
+    /* overflow: clip; 이게무엇 */
+    display: flex;
+    box-sizing: border-box;
+    place-content: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.mk-pricing-item {
+    background-color: var(--surface-color);
+    box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--background-color);
+    padding: 60px 40px;
+    border-radius: 5px;
+    /*height: 540.594px;*/
+    height: 606.594px;
+    width: 416px;
+
+}
+
+.mk-pricing h3 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.mk-pricing h4 {
+    color: #47b2e4;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Jost",  sans-serif;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+.mk-pricing h4 span {
+    color: 
+color-mix(in srgb, #444444, transparent 50%);
+    font-size: 18px;
+}
+
+.mk-pricing ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.mk-pricing li {
+    text-align: -webkit-match-parent;
+}
+.mk-pricing ul {
+    padding: 20px 0;
+    list-style: none;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    text-align: left;
+    line-height: 20px;
+}
+
+.mk-pricing ul .na {
+    color: 
+color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.mk-pricing ul .na i {
+    color: 
+color-mix(in srgb, var(--default-color), transparent 60%);
+}
+
+.mk-pricing ul .na span {
+    text-decoration: line-through;
+}
+
+.mk-pricing .featured {
+    border-top-color: var(--accent-color);
+}
+
+.mk-pricing .featured .buy-btn {
+    background: #47b2e4;   ;
+    color: #ffffff;
+}
+
+.mk-pricing .buy-btn {
+    color: #47b2e4;
+    display: inline-block;
+    padding: 8px 35px 10px 35px;
+    border-radius: 50px;
+    transition: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    transition: 0.3s;
+    border: 1px solid var(--accent-color);
+    
+}
+
+.mk-pricing .buy-btn:hover {
+    background: var(--accent-color);
+    color: var(--contrast-color)
+}
+
+.mk-pricing .featured .buy-btn {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.mk-pricing-container0 {
+    color: #444444;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: -24px;
+    justify-content: center;
+}
+
+.mk-pricing h4 sup {
+    font-size: 28px;
+    top: -.5em;
+    position: relative;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.mk-pricing .custom-icon {
+    color: #059652;
+    width: 20px;
+    height: 20px;    
+    padding-right: 3px;
+}
+
+/*--------------------------------------------------------------*/
+/*page testimonials*/
+/*section ->swiper*/
+
+section.mk-testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+
+.mk-swiper p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.mk-slidewrap {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden; /* 넘치는 슬라이드 숨기기 */
+    position: relative;
+}
+
+.mk-slidelist {
+    display: flex; /* 슬라이드를 가로로 나열 */
+    animation: slide 15s infinite; /* 자동 슬라이드 */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mk-slidelist > li {
+    flex: 0 0 100%; /* 각 슬라이드가 화면 전체 차지 */
+    text-align: center;
+}
+
+.mk-slidelist img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.mk-slidelist h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.mk-slidelist h4 {
+    font-size: 14px;
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    margin: 0 0 15px 0
+}
+
+.mk-stars {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 1px;
+    justify-content: center; /* 가운데 정렬 */
+    align-items: center; /* 수직 정렬 */
+
+}
+
+.mk-stars .star {
+    width: 24px;
+    height: 24px;
+    fill: #ffc107; /* 별 색상 (금색) */
+    stroke: none;
+}
+
+.mk-slidelist p {
+    font-style: italic;
+    margin: 0 auto 15px auto;
+    text-align: center;    
+    color: var(--default-color);
+    box-sizing: border-box;
+    color: rgb(68, 68, 68);
+    display: inline;
+    font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    height: auto;
+    line-height: 24px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    pointer-events: auto;
+    text-align: center;
+    text-size-adjust: 100%;
+    width: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.mk-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; /* 점 사이 간격 */
+    margin: 20px 0;
+  }
+
+  
+  .mk-pagination input[type="radio"] {
+    display: none;
+  }
+  
+  .mk-pagination label {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background-color: color-mix(in srgb, var(--default-color), transparent 85%);
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .mk-pagination input[type="radio"]:checked + label {
+    background-color: var(--accent-color); /* 활성화된 점 색상 */
+  }
+  
+.mk-slidelist {
+    animation: slide 12s infinite;
+}
+
+  /* 점 애니메이션 정의 */
+  .mk-pagination label:nth-of-type(1) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 0s;
+  }
+  
+  .mk-pagination label:nth-of-type(2) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 2.4s;
+  }
+  
+  .mk-pagination label:nth-of-type(3) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 4.8s;
+  }
+  
+  .mk-pagination label:nth-of-type(4) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 7.2s;
+  }
+  
+  .mk-pagination label:nth-of-type(5) {
+    animation: dotActivate 12s infinite;
+    animation-delay: 9.6s;
+  }
+  
+  @keyframes dotActivate {
+    0%, 80% {
+      background-color: lightgray;
+    }
+    90%, 100% {
+      background-color: var(--accent-color);
+    }
+  }
+
+  
+
+/* 애니메이션 정의 */
+@keyframes slide {
+    0% { transform: translateX(0); }         /* 첫 번째 페이지 */
+    15% { transform: translateX(0); }       /* 첫 번째 페이지에서 멈춤 */
+    20% { transform: translateX(-100%); }   /* 두 번째 페이지 */
+    35% { transform: translateX(-100%); }   /* 두 번째 페이지에서 멈춤 */
+    40% { transform: translateX(-200%); }   /* 세 번째 페이지 */
+    55% { transform: translateX(-200%); }   /* 세 번째 페이지에서 멈춤 */
+    60% { transform: translateX(-300%); }   /* 네 번째 페이지 */
+    75% { transform: translateX(-300%); }   /* 네 번째 페이지에서 멈춤 */
+    80% { transform: translateX(-400%); }  /* 다섯 번째 페이지 */
+    95% { transform: translateX(-400%); }  /* 다섯 번째 페이지 */
+    100% { transform: translateX(-500%);}
+  }
+
+
+/* 반응형 디자인 */
+@media (max-width: 600px) {
+    .mk-slidelist img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mk-slidelist h3 {
+        font-size: 18px;
+    }
+
+    .mk-slidelist h4 {
+        font-size: 14px;
+    }
+}
+
+
+
+/*--------------------------------------------------------------*/
+
+@media (min-width: 1400px) {
+    .mk-container {
+        max-width: 1320px;
+    }
+}
+
+@media (min-width: 992px) {
+    .mk-pricing-container {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+/*--------------------------------------------------------------*/

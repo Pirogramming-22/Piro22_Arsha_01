@@ -1,0 +1,115 @@
+#page2_skills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--default-color);
+    background-color: var(--background-color);
+    padding: 60px 0;
+    gap:20;
+    overflow: clip;
+}
+
+.page2_skills_left{
+    display: flex;
+    flex:1;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+}
+.page2_skills_left img{
+    max-width: 80%;
+    height: auto;
+}
+.page2_skills_right{
+    flex: 1;
+    justify-content: center;
+    max-width: 100%;
+    padding: 0 12px;
+    margin: auto;
+}
+.page2_skills_title{
+    max-width: 80%;
+}
+.page2_skills_title > h3{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    margin:0 0 8px;
+    line-height: 1.2;
+}
+.page2_skills_title > p{
+    margin:10px 0 16px;
+    font-style: italic;
+    line-height: 1.5rem;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.page2_skills_body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 80%;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-progress-bar-bg);
+    transition: var(--bs-progress-bar-transition);
+}
+.page2_skills_language{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+.page2_progress_explain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--default-color);
+    padding: 0;
+    margin: 0 0 6px 0;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+}
+.page2_progress_explain > span:nth-child(1){
+    flex:1;
+    text-align: start;
+}
+.page2_progress_explain > span:nth-child(2){
+    flex:1;
+    text-align: end;
+}
+progress{
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-color: var(--heading-color);
+    width: 100%;
+    height: 10px;
+    transition: 0.9s;
+}
+progress::-webkit-progress-value {
+    background-color:var(--heading-color);
+}
+progress::-webkit-progress-bar {
+    background-color: #e9ecef;
+}
+
+@media (max-width:992px){
+    #page2_skills{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .page2_skills_right{
+        margin-top: 15px;
+        align-items: center;
+        margin-left:75px;
+    }
+    .page2_skills_body{
+        text-align: center;
+    }
+}
